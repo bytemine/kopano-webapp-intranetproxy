@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE plugin SYSTEM "manifest.dtd">
+<plugin version="2">
+	<info>
+		<version>1.0</version>
+		<name>intranetproxy</name>
+		<title>intranetproxy</title>
+		<author>Daniel Rauer, bytemine GmbH; Joshua Dick, http://joshdick.github.io; Ronald Toussaint, Kopano B.V.</author>
+		<authorURL>https://www.bytemine.net</authorURL>
+		<description>This plugin allows loading internal ressources via proxy into an iFrame. Based on the Kopano intranet plugin (https://stash.kopano.io/projects/KWA/repos/intranet/browse), as well as on http://joshdick.github.io/miniProxy/.</description>
+	</info>
+	<config>
+		<configfile>config.php</configfile>
+	</config>
+	<components>
+		<component>
+			<files>
+				<server>
+					<serverfile>php/plugin.intranetproxy.php</serverfile>
+				</server>
+				<client>
+					<clientfile load="release">js/intranetproxy.js</clientfile>
+				</client>
+				<resources>
+					<resourcefile load="release">resources/css/intranetproxy.css</resourcefile>
+				</resources>
+			</files>
+		</component>
+	</components>
+</plugin>

@@ -1,0 +1,12 @@
+.icon_intranet {
+	background-image: url(../icons/icon_intranet.png);
+}
+.x-tab-strip-text.icon_intranet {
+	background-position: 0 10px !important;
+}
+
+.intranet-iframe{
+	width: 100%;
+	height: 100%;
+	border: none;
+}
